@@ -58,7 +58,6 @@ import {NgZone, OnInit} from 'angular2/core';
       position: absolute;
       z-index: 10;
       background-color: transparent;
-      background-image: url("/assets/images/icon-search.png");
       background-repeat: no-repeat;
       background-position: right 10px;
       background-size: 28px 18px;
