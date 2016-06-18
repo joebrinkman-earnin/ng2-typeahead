@@ -11,7 +11,7 @@ import {Component, provide} from 'angular2/core';
 import {Typeahead} from '../src/components/ng2-typeahead';
 
 
-describe('Autocomplete Component', () => {
+describe('Typeahead Component', () => {
 
     beforeEachProviders(() => {
         return [

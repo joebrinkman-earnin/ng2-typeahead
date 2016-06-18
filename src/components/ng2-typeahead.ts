@@ -4,16 +4,16 @@ import {NgZone, OnInit} from 'angular2/core';
 
 
 @Component({
-    selector: 'autocomplete',
+    selector: 'typeahead',
     template: `
-    <div class="autocomplete">
+    <div class="typeahead">
 
       <input #inputElement
         [placeholder]="placeholder"
         [(ngModel)]="input"
         type="text"
-        [ngClass]="{'autocomplete-input': true, 'autocomplete-input-has-selection': hasSelection()}"
-        autocomplete="off"
+        [ngClass]="{'typeahead-input': true, 'typeahead-input-has-selection': hasSelection()}"
+        typeahead="off"
         spellcheck="false"
         (keyup)="inputKeyUp($event)"
         (keydown)="inputKeyDown($event)"
@@ -21,14 +21,14 @@ import {NgZone, OnInit} from 'angular2/core';
         (blur)="inputBlur($event)">
 
       <input type="text"
-        class="autocomplete-typeahead"
+        class="typeahead-typeahead"
         [(ngModel)]="typeahead"
-        autocomplete="off"
+        typeahead="off"
         spellcheck="false"
         disabled="true">
 
       <div #suggestionsContainer
-        class="autocomplete-suggestions"
+        class="typeahead-suggestions"
         [hidden]="!areSuggestionsVisible">
 
         <ul (mouseout)="suggestionsMouseOut($event)">
@@ -36,7 +36,7 @@ import {NgZone, OnInit} from 'angular2/core';
           <li *ngFor="#suggestion of suggestions"
             (mouseover)="suggestionMouseOver(suggestion)"
             (mousedown)="suggestionMouseDown(suggestion)"
-            [ngClass]="{'autocomplete-suggestion-active': activeSuggestion===suggestion}">{{ suggestion[displayProperty] }}</li>
+            [ngClass]="{'typeahead-suggestion-active': activeSuggestion===suggestion}">{{ suggestion[displayProperty] }}</li>
 
         </ul>
 
@@ -45,7 +45,7 @@ import {NgZone, OnInit} from 'angular2/core';
     </div>
     `,
     styles: [`
-    .autocomplete {
+    .typeahead {
       position: relative;
       width: 100%;
       text-align: left;
@@ -53,7 +53,7 @@ import {NgZone, OnInit} from 'angular2/core';
       padding-bottom: 2.5em;
     }
 
-    .autocomplete-input {
+    .typeahead-input {
       border-color: transparent;
       position: absolute;
       z-index: 10;
@@ -63,13 +63,13 @@ import {NgZone, OnInit} from 'angular2/core';
       background-size: 28px 18px;
     }
 
-    .autocomplete-input-has-selection {
+    .typeahead-input-has-selection {
       background-color: #f5f5f5;
       border: 1px solid #4c4845;
       color: #008fca;
     }
 
-    .autocomplete-typeahead {
+    .typeahead-typeahead {
       color: rgb(128, 128, 128);
       position: absolute;
       z-index: 5;
@@ -77,7 +77,7 @@ import {NgZone, OnInit} from 'angular2/core';
       background-color: rgb(255, 255, 255);
     }
 
-    .autocomplete-suggestions {
+    .typeahead-suggestions {
       position: absolute;
       top: 42px;
       overflow-y: auto;
@@ -91,24 +91,24 @@ import {NgZone, OnInit} from 'angular2/core';
       z-index: 100;
     }
 
-    .autocomplete-suggestions ul {
+    .typeahead-suggestions ul {
       list-style-type: none;
       padding-left: 0;
       margin-top: 3px;
     }
 
-    .autocomplete-suggestions ul li {
+    .typeahead-suggestions ul li {
       padding: 6px !important;
       font-size: 0.9em;
       border-bottom: 1px solid #e0e0e0;
     }
 
-    .autocomplete-suggestion-active {
+    .typeahead-suggestion-active {
       background-color: #008fca;
       color: #ffffff;
     }
 
-    .autocomplete-active-suggestion {
+    .typeahead-active-suggestion {
       background-color: #008fca !important;
     }
     `],
@@ -192,7 +192,7 @@ export class Typeahead implements OnInit {
     private activeSuggestion: any;
 
     /**
-     * Creates and initializes a new autocomplete component.
+     * Creates and initializes a new typeahead component.
      */
     constructor() {
     }
