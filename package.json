@@ -1,11 +1,11 @@
 {
   "name": "ng2-typeahead",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A typeahead/autocomplete component for Angular 2",
   "main": "dist/main.js",
   "typings": "dist/main.d.ts",
   "scripts": {
-    "postinstall": "bower install && typings install",
+    "postinstall": "typings install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
