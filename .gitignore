@@ -1,0 +1,9 @@
+typings
+npm-debug.log
+dist/
+demo/**/*.js*
+node_modules/
+bower_components/
+coverage/
+test/*.js
+.idea/
