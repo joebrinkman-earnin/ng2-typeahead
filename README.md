@@ -1,11 +1,7 @@
-# ng2-autocomplete
+# ng2-typeahead
 Autocomplete component for Angular 2
 
-***ng2-autocomplete*** is an autocomplete/typeahead component for Angular2.
-
-## Demo
-
-[http://jankuri.com/components/angular2-datepicker](http://jankuri.com/components/angular2-datepicker)
+***ng2-typeahead*** is an typeahead/autocomplete component for Angular2.
 
 ## Installation: 
 
@@ -31,7 +27,7 @@ ng install ng2-autocomplete
 ```ts
 import {Component} from 'angular2/core';
 import {FORM_DIRECTIVES} from 'angular2/common';
-import {Autocomplete} from 'ng2-autocomplete';
+import {Typeahead} from 'ng2-typeahead';
 
 class Test {
   date: string;
@@ -39,9 +35,9 @@ class Test {
 
 @Component({
   template: `
-    <autocomplete [list]="test.date"></datepicker>
+    <typeahead [list]="test.date"></typeahead>
   `,
-  directives: [Autocomplete, FORM_DIRECTIVES]
+  directives: [Typeahead, FORM_DIRECTIVES]
 })
 
 class App {
