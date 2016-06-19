@@ -3,11 +3,11 @@
 		"target": "ES5",
 		"module": "commonjs",
 		"moduleResolution": "node",
-		"sourceMap": true,
+		"sourceMap": false,
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
 		"noImplicitAny": false,
-		"declarationFiles": true,
+		"declaration": true,
 		"rootDir": "./src"
 	},
 	"exclude": [
