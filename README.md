@@ -1,78 +1,51 @@
-[![GitHub version](http://img.shields.io/github/release/brinkmanjg%2Fng2-typeahead.svg)](https://github.com/brinkmanjg/ng2-typeahead)
-[![npm version](http://img.shields.io/npm/v/angular2-grid.svg)](https://www.npmjs.com/package/angular2-grid)
-[![license](http://img.shields.io/github/license/brinkmanjg%2Fng2-typeahead.svg)](https://github.com/brinkmanjg/ng2-typeahead/blob/master/LICENSE)
-[![open issues](http://img.shields.io/github/issues/brinkmanjg%2Fng2-typeahead.svg)](https://github.com/brinkmanjg/ng2-typeahead/issues)
+# ng2-typeahead [![npm version](https://badge.fury.io/js/ng2-typeahead.svg)](http://badge.fury.io/js/ng2-typeahead)
+Easy to use Angular2 directives for files upload ([demo](http://brinkmanjg.github.io/ng2-typeahead/))
 
-# Angular 2 Typeahead
-Angular 2 Typeahead is a typeahead/autocomplete component for [Angular 2](http://angular.io).
-The demo included in this repo follows the [Angular 2 quick start](https://angular.io/docs/js/latest/quickstart.html)
+[![Angular 2 Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://github.com/mgechev/angular2-style-guide)
+[![Build Status](https://travis-ci.org/brinkmanjg/ng2-typeahead.svg?branch=master)](https://travis-ci.org/brinkmanjg/ng2-typeahead)
+[![Code Climate](https://codeclimate.com/github/brinkmanjg/ng2-typeahead/badges/gpa.svg)](https://codeclimate.com/github/brinkmanjg/ng2-typeahead)
+[![Join the chat at https://gitter.im/brinkmanjg/ng2-bootstrap](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/brinkmanjg/ng2-bootstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Dependency Status](https://david-dm.org/brinkmanjg/ng2-typeahead.svg)](https://david-dm.org/brinkmanjg/ng2-typeahead)
+[![devDependency Status](https://david-dm.org/brinkmanjg/ng2-typeahead/dev-status.svg)](https://david-dm.org/brinkmanjg/ng2-typeahead#info=devDependencies)
+[![Throughput Graph](https://graphs.waffle.io/brinkmanjg/ng2-typeahead/throughput.svg)](https://waffle.io/brinkmanjg/ng2-typeahead/metrics)
 
-#### Setup
-----------
+## Quick start
 
-To use Angular 2 Typeahead, simply run `npm install ng2-typeahead` and then include Typeahead in your project (see Example for more details).
+1. A recommended way to install ***ng2-typeahead*** is through [npm](https://www.npmjs.com/search?q=ng2-typeahead) package manager using the following command:
 
-If you want to help with development or try the demo, it's less simple, but not hard. First you'll need to install [Node](http://nodejs.org) and check out a copy of the repo. Then run:
+  `npm i ng2-typeahead --save`
 
-```shell
-$ npm install
-$ gulp build
-```
+  Alternatively, you can [download it in a ZIP file](https://github.com/brinkmanjg/ng2-typeahead/archive/master.zip).
 
-This will give you a fully compiled version of the demo that you can run using the HTTP server of your choice.
+2. Currently `ng2-typeahead` contains one directive: `typeahead`.
 
-You can also use `gulp watch` to compile the demo and have gulp watch for any changes.
+3. More information regarding using of ***ng2-typeahead*** is located in
+  [demo](http://brinkmanjg.github.io/ng2-typeahead/) and [demo sources](https://github.com/brinkmanjg/ng2-typeahead/tree/master/demo).
 
-NOTE: By default Angular 2 and System.js are not listed as actual dependencies, but as peer dependencies, so that npm doesn't install them on systems that just require the install file. If they are not installed, this could cause gulp to break. To fix this, run `npm install angular2 systemjs` and rerun the build command.
+## API for `typeahead`
 
-## Use Example:
+### Properties
 
-```ts
-import {Component} from 'angular2/core';
-import {FORM_DIRECTIVES} from 'angular2/common';
-import {Typeahead} from 'ng2-typeahead';
+  Parameters that supported by this object:
 
-@Component({
-  template: `
-  <autocomplete
-    [list]="allItems"
-    [search-property]="'displayName'" [display-property]="'displayName'"
-    [max-suggestions]="8"
-    (suggestion-selected)="itemSelected($event)" placeholder="Enter a fruit">
-  </autocomplete>
-  `,
-  directives: [Typeahead, FORM_DIRECTIVES]
-})
-class App {
-  allItems: any[];
-  selectedItem: any;
+  1. `list` -
+  2. `displayProperty` -
+  2. `searchProperty` -
+  2. `maxSuggestions` -
 
-  constructor() {
-    this.allItems = [{
-      "id": 1,
-      "displayName": "Apple"
-    },
-    {
-      "id": 2,
-      "displayName": "Orange"
-    },
-    {
-      "id": 3,
-      "displayName": "Banana"
-    }];
-  }
+### Events
 
-  public itemSelected(item) {
-    this.selectedItem = item;
-  }
+  - `suggestionSelected` - 
 
-}
-```
+# Troubleshooting
 
-## Author
+Please follow this guidelines when reporting bugs and feature requests:
 
-[Joe Brinkman](https://github.com/brinkmanjg)
+1. Use [GitHub Issues](https://github.com/brinkmanjg/ng2-typeahead/issues) board to report bugs and feature requests (not our email address)
+2. Please **always** write steps to reproduce the error. That way we can focus on fixing the bug, not scratching our heads trying to reproduce it.
 
-## License
+Thanks for understanding!
 
-This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
+### License
+
+The MIT License (see the [LICENSE](https://github.com/brinkmanjg/ng2-typeahead/blob/master/LICENSE) file for the full text)

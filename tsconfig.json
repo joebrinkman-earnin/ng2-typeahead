@@ -1,17 +1,19 @@
 {
-	"compilerOptions": {
-		"target": "ES5",
-		"module": "commonjs",
-		"moduleResolution": "node",
-		"sourceMap": false,
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
-		"noImplicitAny": false,
-		"declaration": true,
-		"rootDir": "./src"
-	},
-	"exclude": [
-		"bower",
-		"node_modules"
-	]
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "declaration": true,
+    "removeComments": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "listFiles": false,
+    "noLib": false
+  },
+  "files": [
+    "./typings/browser.d.ts",
+    "./ng2-typeahead.ts"
+  ]
 }

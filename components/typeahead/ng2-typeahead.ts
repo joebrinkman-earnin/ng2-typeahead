@@ -1,6 +1,6 @@
-import {Component, Injectable, Input, Output, EventEmitter, ViewChild} from 'angular2/core';
-import {FORM_DIRECTIVES, COMMON_DIRECTIVES, CORE_DIRECTIVES} from 'angular2/common';
-import {NgZone, OnInit} from 'angular2/core';
+import {Component, Injectable, Input, Output, EventEmitter, ViewChild} from '@angular/core';
+import {FORM_DIRECTIVES, COMMON_DIRECTIVES, CORE_DIRECTIVES} from '@angular/common';
+import {NgZone, OnInit} from '@angular/core';
 
 
 @Component({
@@ -154,7 +154,7 @@ export class Typeahead implements OnInit {
     /**
      * Handle to the input element.
      */
-    @ViewChild('inputElement') private inputElement;
+    @ViewChild('inputElement') private inputElement: any;
 
     /**
      * The input element's value.
