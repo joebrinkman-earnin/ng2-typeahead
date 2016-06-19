@@ -1,5 +1,5 @@
 # ng2-typeahead [![npm version](https://badge.fury.io/js/ng2-typeahead.svg)](http://badge.fury.io/js/ng2-typeahead)
-Easy to use Angular2 directives for files upload ([demo](http://brinkmanjg.github.io/ng2-typeahead/))
+Easy to use Angular2 directives for files upload ([ng2-typeahead](http://brinkmanjg.github.io/ng2-typeahead/))
 
 [![Angular 2 Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://github.com/mgechev/angular2-style-guide)
 [![Build Status](https://travis-ci.org/brinkmanjg/ng2-typeahead.svg?branch=master)](https://travis-ci.org/brinkmanjg/ng2-typeahead)
@@ -19,9 +19,6 @@ Easy to use Angular2 directives for files upload ([demo](http://brinkmanjg.githu
 
 2. Currently `ng2-typeahead` contains one directive: `typeahead`.
 
-3. More information regarding using of ***ng2-typeahead*** is located in
-  [demo](http://brinkmanjg.github.io/ng2-typeahead/) and [demo sources](https://github.com/brinkmanjg/ng2-typeahead/tree/master/demo).
-
 ## API for `typeahead`
 
 ### Properties
@@ -35,7 +32,7 @@ Easy to use Angular2 directives for files upload ([demo](http://brinkmanjg.githu
 
 ### Events
 
-  - `suggestionSelected` - 
+  - `suggestionSelected` -
 
 # Troubleshooting
 

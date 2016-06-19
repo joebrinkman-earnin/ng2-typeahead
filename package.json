@@ -1,6 +1,6 @@
 {
   "name": "ng2-typeahead",
-  "version": "0.5.7",
+  "version": "0.5.8",
   "description": "Typeahead/autocomplete component for Angular 2.",
   "scripts": {
     "flow.install:typings": "./node_modules/.bin/typings install",
@@ -8,8 +8,8 @@
     "flow.compile:common": "./node_modules/.bin/tsc",
     "flow.compile:system": "./.config/bundle-system.js",
     "flow.copy:src": "./node_modules/.bin/cpy ng2-typeahead.ts \"components/*.ts\" ts --parents",
-    "flow.clean": "./node_modules/.bin/del bundles coverage demo-build typings \"components/**/*.+(js|d.ts|js.map)\" dist \"ng2-typeahead.+(js|d.ts|js.map)\"",
-    "flow.deploy:gh-pages": "npm run flow.build:prod && ./node_modules/.bin/gh-pages -d demo-build",
+    "flow.clean": "./node_modules/.bin/del bundles coverage typings \"components/**/*.+(js|d.ts|js.map)\" dist \"ng2-typeahead.+(js|d.ts|js.map)\"",
+    "flow.deploy:gh-pages": "npm run flow.build:prod",
     "flow.eslint": "./node_modules/.bin/eslint --ignore-path .gitignore  --ext js --fix . .config",
     "flow.tslint": "./node_modules/.bin/gulp lint",
     "flow.lint": "npm run flow.eslint && npm run flow.tslint",

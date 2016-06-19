@@ -11,15 +11,11 @@ npm-debug.log
 
 # ignore build and dist for now
 /bundles
-/demo-build
 /dist
 /coverage
 /ts
 
 # ignore incline compiling
-/demo/**/*.js
-/demo/**/*.d.ts
-/demo/**/*.js.map
 /components/**/*.js
 /components/**/*.d.ts
 /components/**/*.js.map

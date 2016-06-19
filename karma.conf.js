@@ -29,7 +29,7 @@ module.exports = config => {
     webpack: {
       resolve: {
         root: [path.resolve(cwd)],
-        modulesDirectories: ['node_modules', 'demo', 'components', 'test', '.'],
+        modulesDirectories: ['node_modules', 'components', 'test', '.'],
         extensions: ['', '.ts', '.js', '.css']
       },
       module: {

@@ -23,7 +23,7 @@ marked.Renderer.prototype.code = function renderCode(code, lang) {
 /*eslint no-process-env:0, camelcase:0*/
 const isProduction = (process.env.NODE_ENV || 'development') === 'production';
 const devtool = process.env.NODE_ENV === 'test' ? 'inline-source-map' : 'source-map';
-const dest = 'demo-build';
+//const dest = 'demo-build';
 const absDest = root(dest);
 
 const config = {
@@ -72,7 +72,7 @@ const config = {
     historyApiFallback: true,
     contentBase: dest,
     //publicPath: dest,
-    outputPath: dest,
+    //outputPath: dest,
     watchOptions: {aggregateTimeout: 300, poll: 1000}
   },
 
@@ -128,10 +128,10 @@ const config = {
       filename: 'angular2.js'
     }),
     // static assets
-    new CopyWebpackPlugin([{from: 'demo/favicon.ico', to: 'favicon.ico'}]),
-    new CopyWebpackPlugin([{from: 'demo/assets', to: 'assets'}]),
+    //new CopyWebpackPlugin([{from: 'demo/favicon.ico', to: 'favicon.ico'}]),
+    //new CopyWebpackPlugin([{from: 'demo/assets', to: 'assets'}]),
     // generating html
-    new HtmlWebpackPlugin({template: 'demo/index.html'})
+    //new HtmlWebpackPlugin({template: 'demo/index.html'})
   ],
   pushPlugins() {
     if (!isProduction) {
