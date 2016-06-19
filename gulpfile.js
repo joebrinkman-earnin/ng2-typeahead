@@ -14,7 +14,7 @@ var tsProject = typescript.createProject('tsconfig.json');
 
 var PATHS = {
 	src: {
-		ts: ['!src/*.d.ts', 'src/**/*.ts'],
+		ts: ['!src/*.d.ts', 'src/**/*.ts', '*.ts'],
 		html: 'src/*.html',
 		css: 'src/*.css',
 		test: 'test/*.ts',

@@ -1,9 +1,9 @@
 {
   "name": "ng2-typeahead",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "A typeahead/autocomplete component for Angular 2",
-  "main": "dist/main.js",
-  "typings": "dist/main.d.ts",
+  "main": "ng2-typeahead.js",
+  "typings": "ng2-typeahead.d.ts",
   "scripts": {
     "postinstall": "typings install",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/brinkmanjg/ng2-typeahead",
   "files": [
-    "dist/index*",
     "dist/main*",
     "dist/components/*"
   ],
