@@ -55,8 +55,7 @@ const config = {
       '@angular/common',
       '@angular/core'
     ],
-    'angular2-bootstrap': ['ng2-file-upload'],
-    'angular2-bootstrap-demo': 'demo'
+    'angular2-bootstrap': ['ng2-typeahead'],
   },
 
   output: {
