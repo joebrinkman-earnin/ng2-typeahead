@@ -124,32 +124,32 @@ export class Typeahead implements OnInit {
     /**
      * The complete list of items.
      */
-    @Input() private list: any[] = [];
+    @Input() list: any[] = [];
 
     /**
      * Input element placeholder text.
      */
-    @Input() private placeholder: string = '';
+    @Input() placeholder: string = '';
 
     /**
      * The property of a list item that should be used for matching.
      */
-    @Input() private searchProperty: string = 'name';
+    @Input() searchProperty: string = 'name';
 
     /**
      * The property of a list item that should be displayed.
      */
-    @Input() private displayProperty: string = 'name';
+    @Input() displayProperty: string = 'name';
 
     /**
      * The maximum number of suggestions to display.
      */
-    @Input() private maxSuggestions: number = -1;
+    @Input() maxSuggestions: number = -1;
 
     /**
      * Event that occurs when a suggestion is selected.
      */
-    @Output() private suggestionSelected = new EventEmitter<any>();
+    @Output() suggestionSelected = new EventEmitter<any>();
 
     /**
      * Handle to the input element.
