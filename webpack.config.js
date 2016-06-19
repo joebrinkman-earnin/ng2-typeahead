@@ -24,7 +24,7 @@ marked.Renderer.prototype.code = function renderCode(code, lang) {
 const isProduction = (process.env.NODE_ENV || 'development') === 'production';
 const devtool = process.env.NODE_ENV === 'test' ? 'inline-source-map' : 'source-map';
 //const dest = 'demo-build';
-const absDest = root(dest);
+//const absDest = root(dest);
 
 const config = {
   // isProduction ? 'source-map' : 'evale',
@@ -59,7 +59,7 @@ const config = {
   },
 
   output: {
-    path: absDest,
+    //path: absDest,
     filename: '[name].js',
     sourceMapFilename: '[name].js.map',
     chunkFilename: '[id].chunk.js'
