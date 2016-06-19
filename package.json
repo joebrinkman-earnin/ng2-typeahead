@@ -1,6 +1,6 @@
 {
   "name": "ng2-typeahead",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "A typeahead/autocomplete component for Angular 2",
   "main": "dist/main.js",
   "typings": "dist/main.d.ts",
@@ -26,12 +26,11 @@
   },
   "homepage": "https://github.com/brinkmanjg/ng2-typeahead",
   "files": [
-    "dist/ng2-typeahead*",
+    "dist/index*",
     "dist/main*",
     "dist/components/*"
   ],
   "peerDependencies": {
-    "@angular/core": "^2.0.0-rc.0"
   },
   "devDependencies": {
     "@angular/common": "^2.0.0-rc.0",

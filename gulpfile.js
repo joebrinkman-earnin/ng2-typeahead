@@ -34,14 +34,13 @@ gulp.task('clean', function (done) {
 });
 
 gulp.task('ts', function () {
-	//return gulp.src(PATHS.src.ts.concat(PATHS.typings)).pipe(gulp.dest('dist'));
-
 	var tsResult = gulp.src(PATHS.src.ts.concat(PATHS.typings))
 		.pipe(sourcemaps.init())
 		.pipe(typescript(tsProject));
 
 	return merge([
 		gulp.src(PATHS.src.ts.concat(PATHS.typings)).pipe(gulp.dest('dist')),
+		tsResult.js.pipe(sourcemaps.write()).pipe(gulp.dest('dist')),
 		tsResult.dts.pipe(gulp.dest('dist'))
 	]);
 
