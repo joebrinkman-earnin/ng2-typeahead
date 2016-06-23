@@ -1,4 +1,4 @@
-import {Component, Injectable, Input, Output, EventEmitter, ViewChild} from '@angular/core';
+import {Component, Directive, Injectable, Input, Output, EventEmitter, ViewChild} from '@angular/core';
 import {FORM_DIRECTIVES, COMMON_DIRECTIVES, CORE_DIRECTIVES} from '@angular/common';
 import {NgZone, OnInit} from '@angular/core';
 
