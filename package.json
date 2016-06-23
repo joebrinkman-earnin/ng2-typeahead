@@ -1,7 +1,7 @@
 {
   "name": "ng2-typeahead",
-  "version": "0.5.15",
-  "description": "Typeahead/autocomplete component for Angular 2.",
+  "version": "0.5.16",
+  "description": "A simple Angular2 typeahead/autocomplete component with no third-party dependencies.",
   "scripts": {
     "flow.install:typings": "./node_modules/.bin/typings install",
     "flow.compile": "npm run flow.install:typings && npm run flow.compile:common && npm run flow.compile:system ",
@@ -31,10 +31,13 @@
   "main": "ng2-typeahead.js",
   "typings": "ng2-typeahead.d.ts",
   "keywords": [
+    "angular",
     "angular2",
     "typeahead",
     "angularjs",
-    "autocomplete"
+    "autocomplete",
+    "ng2",
+    "ng"
   ],
   "author": "Joe Brinkman <brinkmanjg@gmail.com>",
   "license": "MIT",

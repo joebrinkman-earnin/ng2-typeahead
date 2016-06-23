@@ -1,5 +1,7 @@
 # ng2-typeahead [![npm version](https://badge.fury.io/js/ng2-typeahead.svg)](http://badge.fury.io/js/ng2-typeahead)
-Easy to use Angular2 directive for typeahead/autocomplete ([ng2-typeahead](https://github.com/brinkmanjg/ng2-typeahead))
+A simple Angular2 typeahead/autocomplete component with no third-party dependencies.
+
+[See ng2-typeahead on GitHub](https://github.com/brinkmanjg/ng2-typeahead)
 
 [![Angular 2 Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://github.com/mgechev/angular2-style-guide)
 [![Join the chat at https://gitter.im/brinkmanjg/ng2-bootstrap](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/brinkmanjg/ng2-bootstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -7,9 +9,9 @@ Easy to use Angular2 directive for typeahead/autocomplete ([ng2-typeahead](https
 [![devDependency Status](https://david-dm.org/brinkmanjg/ng2-typeahead/dev-status.svg)](https://david-dm.org/brinkmanjg/ng2-typeahead#info=devDependencies)
 [![Throughput Graph](https://graphs.waffle.io/brinkmanjg/ng2-typeahead/throughput.svg)](https://waffle.io/brinkmanjg/ng2-typeahead/metrics)
 
-## Quick start
+## Installation
 
-1. A recommended way to install ***ng2-typeahead*** is through [npm](https://www.npmjs.com/search?q=ng2-typeahead) package manager using the following command:
+1. A recommended way to install ***ng2-typeahead*** is through the [npm](https://www.npmjs.com/search?q=ng2-typeahead) package manager using the following command:
 
   `npm i ng2-typeahead --save`
 
@@ -17,35 +19,19 @@ Easy to use Angular2 directive for typeahead/autocomplete ([ng2-typeahead](https
 
 2. Currently `ng2-typeahead` contains one directive: `typeahead`.
 
-## API for `typeahead`
-
-### Properties
-
-  Parameters that supported by this object:
-
-  1. `list` - The complete list of items. These can be any type of object.
-  2. `displayProperty` - The property of a list item that should be displayed.
-  3. `searchProperty` - The property of a list item that should be used for matching.
-  4. `maxSuggestions` - The maximum number of suggestions to display.
-
-`displayProperty` and `searchProperty` can be the same property or different properties based on your needs.  
-
-### Events
-
-  - `suggestionSelected` - Called when a suggestion has been selected. The function parameter is the selected item.
 
 ### Example
 
-```ts
+###### my.component.ts
+```javascript
 import {Typeahead} from 'ng2-typeahead'
 
 @Component({
     selector: 'my-component',
     template: require('./my.component.html'),
-    directives: [Typeahead],
-    providers: []
+    directives: [Typeahead]
 })
-export class MyComponent implements OnInit {
+export class MyComponent {
 
   items: any[] = [
     {
@@ -67,9 +53,6 @@ export class MyComponent implements OnInit {
 
   selectedItem: any;
 
-  constructor() {
-  }
-
   public commoditySelected(item) {
     this.selectedItem = item;
   }
@@ -77,15 +60,56 @@ export class MyComponent implements OnInit {
 }
 ```
 
+###### my.component.html
 ```html
 <typeahead
   [list]="items"
   [searchProperty]="'searchText'" [displayProperty]="'name'"
-  [maxSuggestions]="3"
+  [maxSuggestions]="2"
   (suggestionSelected)="itemSelected($event)"
-  placeholder="Enter text">
+  placeholder="Begin typing a fruit">
 </typeahead>
 ```
+
+
+## API for `typeahead`
+
+This is the only directive. Provide a list of suggestions as an object array, specify the display and search properties, and handle the selection event however you like.
+
+
+### Properties
+
+Binding Property | Type | Remarks
+------------ | ---------- | -------------
+`[list]` | `any[]` | The complete list of items. These can be any type of object. This is required.
+`[displayProperty]` | `string` | The property of a list item that should be displayed. The default is 'name'.
+`[searchProperty]` | `string` | The property of a list item that should be used for matching. The default is 'name'.
+`[maxSuggestions]` | `number` | The maximum number of suggestions to display. The default is -1 (no limit).
+
+Note: `displayProperty` and `searchProperty` can be the same property or different properties based on your needs.  
+
+
+### Events
+
+Event Binding | Remarks
+------------ | -------------
+`(suggestionSelected)` | Called when a suggestion has been selected. The only parameter is the selected item.
+
+
+### Styles
+
+Selector | Remarks
+------------ | -------------
+`.typeahead` | The outer `div` which holds all component elements.
+`.typeahead-input` | The `input` element into which the user enters text.
+`.typeahead-input-has-selection` | The `input` element into which the user enters text when a suggestion is selected. This alerts the user that a selection has been made.
+`.typeahead-typeahead` | The type-ahead `input` element which displays the suggested text.
+`.typeahead-suggestions` | The `div` which holds the suggestions elements.
+`.typeahead-suggestions ul` | The unordered list of suggestions.
+`.typeahead-suggestions ul li` | The individual suggestion elements.
+`.typeahead-suggestion-active` | The active (highlighted) suggestion in the suggestions list.
+
+
 
 # Troubleshooting
 

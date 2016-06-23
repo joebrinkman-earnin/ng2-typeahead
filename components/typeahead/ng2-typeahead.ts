@@ -107,10 +107,6 @@ import {NgZone, OnInit} from '@angular/core';
       background-color: #008fca;
       color: #ffffff;
     }
-
-    .typeahead-active-suggestion {
-      background-color: #008fca !important;
-    }
     `],
     directives: [
         ...FORM_DIRECTIVES,
