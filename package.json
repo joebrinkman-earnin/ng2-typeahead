@@ -1,6 +1,6 @@
 {
   "name": "ng2-typeahead",
-  "version": "0.5.12",
+  "version": "0.5.13",
   "description": "Typeahead/autocomplete component for Angular 2.",
   "scripts": {
     "flow.install:typings": "./node_modules/.bin/typings install",

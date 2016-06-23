@@ -55,7 +55,7 @@ const config = {
       '@angular/common',
       '@angular/core'
     ],
-    'angular2-bootstrap': ['ng2-typeahead'],
+    'angular2-bootstrap': ['ng2-typeahead']
   },
 
   output: {
@@ -126,7 +126,7 @@ const config = {
       name: 'angular2',
       minChunks: Infinity,
       filename: 'angular2.js'
-    }),
+    })
     // static assets
     //new CopyWebpackPlugin([{from: 'demo/favicon.ico', to: 'favicon.ico'}]),
     //new CopyWebpackPlugin([{from: 'demo/assets', to: 'assets'}]),

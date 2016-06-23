@@ -33,7 +33,7 @@ import {NgZone, OnInit} from '@angular/core';
 
         <ul (mouseout)="suggestionsMouseOut($event)">
 
-          <li *ngFor="#suggestion of suggestions"
+          <li *ngFor="let suggestion of suggestions"
             (mouseover)="suggestionMouseOver(suggestion)"
             (mousedown)="suggestionMouseDown(suggestion)"
             [ngClass]="{'typeahead-suggestion-active': activeSuggestion===suggestion}">{{ suggestion[displayProperty] }}</li>
