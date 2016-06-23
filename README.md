@@ -1,9 +1,7 @@
 # ng2-typeahead [![npm version](https://badge.fury.io/js/ng2-typeahead.svg)](http://badge.fury.io/js/ng2-typeahead)
-Easy to use Angular2 directive for typeahead/autocomplete ([ng2-typeahead](http://brinkmanjg.github.io/ng2-typeahead/))
+Easy to use Angular2 directive for typeahead/autocomplete ([ng2-typeahead](https://github.com/brinkmanjg/ng2-typeahead))
 
 [![Angular 2 Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://github.com/mgechev/angular2-style-guide)
-[![Build Status](https://travis-ci.org/brinkmanjg/ng2-typeahead.svg?branch=master)](https://travis-ci.org/brinkmanjg/ng2-typeahead)
-[![Code Climate](https://codeclimate.com/github/brinkmanjg/ng2-typeahead/badges/gpa.svg)](https://codeclimate.com/github/brinkmanjg/ng2-typeahead)
 [![Join the chat at https://gitter.im/brinkmanjg/ng2-bootstrap](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/brinkmanjg/ng2-bootstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Dependency Status](https://david-dm.org/brinkmanjg/ng2-typeahead.svg)](https://david-dm.org/brinkmanjg/ng2-typeahead)
 [![devDependency Status](https://david-dm.org/brinkmanjg/ng2-typeahead/dev-status.svg)](https://david-dm.org/brinkmanjg/ng2-typeahead#info=devDependencies)
