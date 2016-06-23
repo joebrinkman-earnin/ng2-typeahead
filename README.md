@@ -33,7 +33,7 @@ import {Typeahead} from 'ng2-typeahead'
 })
 export class MyComponent {
 
-  items: any[] = [
+  fruits: any[] = [
     {
       id: 1,
       name: "1 - Apple",
@@ -51,10 +51,10 @@ export class MyComponent {
     }
   ];
 
-  selectedItem: any;
+  selectedFruit: any;
 
-  public commoditySelected(item) {
-    this.selectedItem = item;
+  public fruitSelected(fruit) {
+    this.selectedFruit = fruit;
   }
 
 }
@@ -66,10 +66,13 @@ export class MyComponent {
   [list]="items"
   [searchProperty]="'searchText'" [displayProperty]="'name'"
   [maxSuggestions]="2"
-  (suggestionSelected)="itemSelected($event)"
+  (suggestionSelected)="fruitSelected($event)"
   placeholder="Begin typing a fruit">
 </typeahead>
 ```
+
+###### Demo
+![](https://cloud.githubusercontent.com/assets/6796665/16323353/2755a59e-3978-11e6-874c-905a0459d7a5.gif)
 
 
 ## API for `typeahead`
