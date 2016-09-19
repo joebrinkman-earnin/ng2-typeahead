@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c515223c-b648-451c-aae3-80cbdc137684" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/atlassian-ide-plugin.xml" afterPath="$PROJECT_DIR$/.idea/atlassian-ide-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ng2-typeahead.js" afterPath="$PROJECT_DIR$/lib/ng2-typeahead.js" />
     </list>
     <ignored path="ng2-typeahead.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,17 +54,17 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="869">
-                <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+              <first_editor relative-caret-position="940">
+                <caret line="86" column="3" selection-start-line="86" selection-start-column="3" selection-end-line="86" selection-end-column="3" />
                 <folding>
-                  <marker date="1474306510257" expanded="true" signature="1532:1639" ph="{&quot;selector&quot;: 'my-component'...}" />
-                  <marker date="1474306510257" expanded="true" signature="1666:2022" ph="{...}" />
-                  <marker date="1474306510257" expanded="true" signature="1687:1926" ph="[...]" />
-                  <marker date="1474306510257" expanded="true" signature="1693:1764" ph="{&quot;id&quot;: 1...}" />
-                  <marker date="1474306510257" expanded="true" signature="1770:1843" ph="{&quot;id&quot;: 2...}" />
-                  <marker date="1474306510257" expanded="true" signature="1849:1922" ph="{&quot;id&quot;: 3...}" />
-                  <marker date="1474306510257" expanded="true" signature="1982:2019" ph="{...}" />
-                  <marker date="1474306510257" expanded="true" signature="2071:2270" ph="..." />
+                  <marker date="1474306617105" expanded="true" signature="1532:1639" ph="{&quot;selector&quot;: 'my-component'...}" />
+                  <marker date="1474306617105" expanded="true" signature="1666:2022" ph="{...}" />
+                  <marker date="1474306617105" expanded="true" signature="1687:1926" ph="[...]" />
+                  <marker date="1474306617105" expanded="true" signature="1693:1764" ph="{&quot;id&quot;: 1...}" />
+                  <marker date="1474306617105" expanded="true" signature="1770:1843" ph="{&quot;id&quot;: 2...}" />
+                  <marker date="1474306617105" expanded="true" signature="1849:1922" ph="{&quot;id&quot;: 3...}" />
+                  <marker date="1474306617105" expanded="true" signature="1982:2019" ph="{...}" />
+                  <marker date="1474306617105" expanded="true" signature="2071:2270" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -271,12 +268,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474289056767</updated>
-      <workItem from="1474289057978" duration="10556000" />
+      <workItem from="1474289057978" duration="10653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10556000" />
+    <option name="totallyTimeSpent" value="10653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1576" extended-state="6" />
@@ -511,17 +508,17 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="869">
-            <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <first_editor relative-caret-position="940">
+            <caret line="86" column="3" selection-start-line="86" selection-start-column="3" selection-end-line="86" selection-end-column="3" />
             <folding>
-              <marker date="1474306510257" expanded="true" signature="1532:1639" ph="{&quot;selector&quot;: 'my-component'...}" />
-              <marker date="1474306510257" expanded="true" signature="1666:2022" ph="{...}" />
-              <marker date="1474306510257" expanded="true" signature="1687:1926" ph="[...]" />
-              <marker date="1474306510257" expanded="true" signature="1693:1764" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1474306510257" expanded="true" signature="1770:1843" ph="{&quot;id&quot;: 2...}" />
-              <marker date="1474306510257" expanded="true" signature="1849:1922" ph="{&quot;id&quot;: 3...}" />
-              <marker date="1474306510257" expanded="true" signature="1982:2019" ph="{...}" />
-              <marker date="1474306510257" expanded="true" signature="2071:2270" ph="..." />
+              <marker date="1474306617105" expanded="true" signature="1532:1639" ph="{&quot;selector&quot;: 'my-component'...}" />
+              <marker date="1474306617105" expanded="true" signature="1666:2022" ph="{...}" />
+              <marker date="1474306617105" expanded="true" signature="1687:1926" ph="[...]" />
+              <marker date="1474306617105" expanded="true" signature="1693:1764" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1474306617105" expanded="true" signature="1770:1843" ph="{&quot;id&quot;: 2...}" />
+              <marker date="1474306617105" expanded="true" signature="1849:1922" ph="{&quot;id&quot;: 3...}" />
+              <marker date="1474306617105" expanded="true" signature="1982:2019" ph="{...}" />
+              <marker date="1474306617105" expanded="true" signature="2071:2270" ph="..." />
             </folding>
           </first_editor>
           <second_editor />

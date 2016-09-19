@@ -71,6 +71,21 @@ export class MyComponent {
 </typeahead>
 ```
 
+The following adjustments may be required in systemjs.config.js to run the example code.
+[Issue #7](https://github.com/brinkmanjg/ng2-typeahead/issues/7)
+
+```
+var map = {
+    ...
+    'ng2-typeahead':              'node_modules/ng2-typeahead',                             
+  };
+  ...
+  var packages = {
+    ...
+    'ng2-typeahead':              { main: 'ng2-typeahead.js', defaultExtension: 'js' }
+  };
+```
+
 ###### Demo
 ![](https://cloud.githubusercontent.com/assets/6796665/16323353/2755a59e-3978-11e6-874c-905a0459d7a5.gif)
 
@@ -123,22 +138,7 @@ Please follow this guidelines when reporting bugs and feature requests:
 
 Thanks for understanding, and apologies for any issues experienced thus far.
 
-#### systemjs.config.js changes
 
-The following adjustments may be required in systemjs.config.js to run the example code.
-[Issue #7](https://github.com/brinkmanjg/ng2-typeahead/issues/7)
-
-```
-var map = {
-    ...
-    'ng2-typeahead':              'node_modules/ng2-typeahead',                             
-  };
-  ...
-  var packages = {
-    ...
-    'ng2-typeahead':              { main: 'ng2-typeahead.js', defaultExtension: 'js' }
-  };
-```
 
 ### License
 
