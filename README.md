@@ -24,12 +24,15 @@ A simple Angular2 typeahead/autocomplete component.
 
 ###### my.component.ts
 ```javascript
-import {Typeahead} from 'ng2-typeahead'
+import { Typeahead } from 'ng2-typeahead';
+
+@NgModule({
+   declarations: [ Typeahead ],
+})
 
 @Component({
     selector: 'my-component',
-    template: require('./my.component.html'),
-    directives: [Typeahead]
+    template: require('./my.component.html')
 })
 export class MyComponent {
 
@@ -51,7 +54,7 @@ export class MyComponent {
     }
   ];
 
-  selectedFruit: any;
+  selectedFruit: any = this.fruits[0];
 
   public fruitSelected(fruit) {
     this.selectedFruit = fruit;
@@ -63,6 +66,7 @@ export class MyComponent {
 ###### my.component.html
 ```html
 <typeahead
+  [(ngModel)]="selectedFruit"
   [list]="fruits"
   [searchProperty]="'searchText'" [displayProperty]="'name'"
   [maxSuggestions]="2"
@@ -99,6 +103,7 @@ This is the only directive. Provide a list of suggestions as an object array, sp
 
 Binding Property | Type | Remarks
 ------------ | ---------- | -------------
+`[(ngModel)]` | `any` | The model property to which the component is bound. Optional.
 `[list]` | `any[]` | The complete list of items. These can be any type of object. This is required.
 `[displayProperty]` | `string` | The property of a list item that should be displayed. The default is 'name'.
 `[searchProperty]` | `string` | The property of a list item that should be used for matching. The default is 'name'.

@@ -10,7 +10,7 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
-    "localdev": "tsc && cp -r lib src ../angular2-webpack-starter/node_modules/ng2-typeahead/"
+    "localdev": "tsc && cp -r lib src ../dev-site/node_modules/ng2-typeahead/"
   },
   "keywords": [
     "angular",
@@ -37,6 +37,7 @@
   "dependencies": {
     "@angular/common": "2.0.0",
     "@angular/core": "2.0.0",
+    "@angular/forms": "2.0.0",
     "core-js": "^2.4.1",
     "reflect-metadata": "^0.1.3",
     "rxjs": "5.0.0-beta.12",

@@ -1,4 +1,14 @@
-import { Component, Input, Output, EventEmitter, ViewChild, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ViewChild, OnInit, forwardRef } from '@angular/core';
+import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
+
+const noop = () => {};
+
+export const TYPEAHEAD_CONTROL_VALUE_ACCESSOR: any = {
+   provide: NG_VALUE_ACCESSOR,
+   useExisting: forwardRef(() => Typeahead),
+   multi: true
+};
+
 
 @Component({
    selector: 'typeahead',
@@ -105,9 +115,9 @@ import { Component, Input, Output, EventEmitter, ViewChild, OnInit } from '@angu
       color: #ffffff;
     }
     `],
-   providers: []
+   providers: [ TYPEAHEAD_CONTROL_VALUE_ACCESSOR ]
 })
-export class Typeahead implements OnInit {
+export class Typeahead implements OnInit, ControlValueAccessor {
 
    /**
     * The complete list of items.
@@ -195,6 +205,56 @@ export class Typeahead implements OnInit {
     * instantiated.
     */
    public ngOnInit() {
+   }
+
+   /**
+    * Placeholder for a callback which is later provided by the Control Value Accessor.
+    */
+   private onTouchedCallback: () => void = noop;
+
+   /**
+    * Placeholder for a callback which is later provided by the Control Value Accessor.
+    */
+   private onChangeCallback: (_: any) => void = noop;
+
+   /**
+    * Get accessor.
+    */
+   get value(): any {
+      return this.selectedSuggestion;
+   };
+
+   /**
+    * Set accessor including call the onchange callback.
+    */
+   set value(v: any) {
+      if (v !== this.selectedSuggestion) {
+         this.selectSuggestion(v);
+         this.onChangeCallback(v);
+      }
+   }
+
+   /**
+    * From ControlValueAccessor interface.
+    */
+   writeValue(value: any) {
+      if (value !== this.selectedSuggestion) {
+         this.selectSuggestion(value);
+      }
+   }
+
+   /**
+    * From ControlValueAccessor interface.
+    */
+   registerOnChange(fn: any) {
+      this.onChangeCallback = fn;
+   }
+
+   /**
+    * From ControlValueAccessor interface.
+    */
+   registerOnTouched(fn: any) {
+      this.onTouchedCallback = fn;
    }
 
    /**
@@ -363,6 +423,7 @@ export class Typeahead implements OnInit {
    public inputBlur(event: Event) {
       this.typeahead = '';
       this.areSuggestionsVisible = false;
+      this.onTouchedCallback();
    }
 
    /**
