@@ -1,5 +1,5 @@
 # ng2-typeahead [![npm version](https://badge.fury.io/js/ng2-typeahead.svg)](http://badge.fury.io/js/ng2-typeahead)
-A simple Angular2 typeahead/autocomplete component with no third-party dependencies.
+A simple Angular2 typeahead/autocomplete component.
 
 [See ng2-typeahead on GitHub](https://github.com/brinkmanjg/ng2-typeahead)
 
@@ -122,6 +122,23 @@ Please follow this guidelines when reporting bugs and feature requests:
 2. Please **always** write steps to reproduce the error. That way we can focus on fixing the bug, not scratching our heads trying to reproduce it.
 
 Thanks for understanding, and apologies for any issues experienced thus far.
+
+#### systemjs.config.js changes
+
+The following adjustments may be required in systemjs.config.js to run the example code.
+[Issue #7](https://github.com/brinkmanjg/ng2-typeahead/issues/7)
+
+```
+var map = {
+    ...
+    'ng2-typeahead':              'node_modules/ng2-typeahead',                             
+  };
+  ...
+  var packages = {
+    ...
+    'ng2-typeahead':              { main: 'ng2-typeahead.js', defaultExtension: 'js' }
+  };
+```
 
 ### License
 
