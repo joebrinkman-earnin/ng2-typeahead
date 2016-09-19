@@ -63,7 +63,7 @@ export class MyComponent {
 ###### my.component.html
 ```html
 <typeahead
-  [list]="items"
+  [list]="fruits"
   [searchProperty]="'searchText'" [displayProperty]="'name'"
   [maxSuggestions]="2"
   (suggestionSelected)="fruitSelected($event)"
