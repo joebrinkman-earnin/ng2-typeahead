@@ -1,4 +1,0 @@
-{
-  "extends": "tslint-config-valorsoft",
-  "rulesDirectory": "./node_modules/codelyzer"
-}

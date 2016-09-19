@@ -1,20 +1,7 @@
-.idea
-gulp-tasks
-logs
+node_modules/
+*.d.ts
+*.log
+*.tgz
 
-# typings
-typings
-
-# testing
-karma.conf.js
-test.bundle.js
-coverage
-
-webpack.config.js
-
-#typescript sources
-*.ts
-*.js.map
-!*.d.ts
-/components/**/*.ts
-!/components/**/*.d.ts
+!index.d.ts
+!index.ref.d.ts

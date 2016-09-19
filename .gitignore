@@ -1,25 +1,5 @@
-# Dependency directory
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-/node_modules
-npm-debug.log
-
-# type script artifacts
-/typings
-
-# WebStorm
-.idea
-
-# ignore build and dist for now
-/bundles
-/dist
-/coverage
-/ts
-
-# ignore incline compiling
-/components/**/*.js
-/components/**/*.d.ts
-/components/**/*.js.map
-ng2-typeahead.js
-ng2-typeahead.d.ts
-ng2-typeahead.js.map
-/logs
+node_modules/
+dist/
+*.d.ts
+*.log
+*.tgz
