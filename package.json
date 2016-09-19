@@ -1,6 +1,6 @@
 {
   "name": "ng2-typeahead",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "description": "A simple Angular2 typeahead/autocomplete component with no third-party dependencies.",
   "main": "dist/example.js",
   "scripts": {
