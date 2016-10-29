@@ -2,7 +2,7 @@
   "name": "ng2-typeahead",
   "version": "0.6.0",
   "description": "A simple Angular2 typeahead/autocomplete component with no third-party dependencies.",
-  "main": "dist/example.js",
+  "main": "./lib/ng2-typeahead",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
