@@ -36,20 +36,21 @@ import { Typeahead } from 'ng2-typeahead';
 })
 export class MyComponent {
 
+  fruitName: string;
   fruits: any[] = [
     {
       id: 1,
-      name: "1 - Apple",
+      name: "Apple",
       searchText: "apple"
     },
     {
       id: 2,
-      name: "2 - Orange",
+      name: "Orange",
       searchText: "orange"
     },
     {
       id: 3,
-      name: "3 - Banana",
+      name: "Banana",
       searchText: "banana"
     }
   ];
@@ -57,7 +58,7 @@ export class MyComponent {
   selectedFruit: any = this.fruits[0];
 
   public fruitSelected(fruit) {
-    this.selectedFruit = fruit;
+    this.fruitName = fruit ? fruit.name : 'none';
   }
 
 }
@@ -73,6 +74,8 @@ export class MyComponent {
   (suggestionSelected)="fruitSelected($event)"
   placeholder="Begin typing a fruit">
 </typeahead>
+
+<p>You selected {{ fruitName }}</p>
 ```
 
 The following adjustments may be required in systemjs.config.js to run the example code.
