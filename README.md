@@ -32,7 +32,15 @@ import { Typeahead } from 'ng2-typeahead';
 
 @Component({
     selector: 'my-component',
-    template: require('./my.component.html')
+    template: require('./my.component.html'),
+    styles: [`
+        .typeahead-input,
+        .typeahead-typeahead{
+            width: 250px;
+            padding: 8px;
+            border-radius: 5px;
+        }
+    `]
 })
 export class MyComponent {
 
