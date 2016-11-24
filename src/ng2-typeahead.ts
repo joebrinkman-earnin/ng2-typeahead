@@ -378,7 +378,6 @@ export class Typeahead implements OnInit, ControlValueAccessor {
    * Called when a keyup event is fired on the input element.
    */
   public inputKeyUp(event:KeyboardEvent) {
-    console.debug(`inputKeyUp: `, event.which);
     // Ignore TAB, UP, and DOWN since they are processed by the keydown handler
     if (event.which === 9 || event.keyCode === 9 ||
       event.which === 38 || event.keyCode === 38 ||
