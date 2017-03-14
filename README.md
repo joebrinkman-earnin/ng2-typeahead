@@ -1,5 +1,9 @@
-# ng2-typeahead [![npm version](https://badge.fury.io/js/ng2-typeahead.svg)](http://badge.fury.io/js/ng2-typeahead)
+
+
+# [deprecated] ng2-typeahead [![npm version](https://badge.fury.io/js/ng2-typeahead.svg)](http://badge.fury.io/js/ng2-typeahead)
 A simple Angular2 typeahead/autocomplete component.
+
+**This package is no longer being developed.**
 
 [See ng2-typeahead on GitHub](https://github.com/brinkmanjg/ng2-typeahead)
 
